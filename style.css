@@ -1,0 +1,690 @@
+body {
+   margin: 0px;
+   font-size: 18px;
+}
+
+body::-webkit-scrollbar {
+   display: none;
+}
+
+/* Body Header */
+
+#body-header {
+   height: 65vh;
+   background-image: url(https://images.unsplash.com/photo-1515343480029-43cdfe6b6aae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80);
+   background-size: cover;
+   background-position: center;
+   opacity: 0.9;
+   background-attachment: fixed;
+   padding: 1.2rem;
+}
+
+/* Vertical Lists */
+
+.bars {
+   color: white;
+   margin: 0;
+   margin-right: 5%;
+   display: none;
+}
+
+.bars i {
+   font-size: 2.5rem;
+}
+
+.dropdown-list {
+   margin: 0;
+   padding: 0.001rem;
+   display: none;
+   background-color: #828470;
+   box-shadow: 0px 4px 8px 1px #535547;
+   opacity: 0.7;
+}
+
+.dropdown-list ul {
+   margin: 0.2rem;
+   text-align: left;
+   padding: 0 0.1rem;
+}
+
+.dropdown-menu:hover .dropdown-list {
+   display: block;
+   position: absolute;
+   right: 5%;
+}
+
+.dropdown-list li {
+   margin: 0.4rem;
+}
+
+.no-list-style {
+   list-style: none;
+}
+
+.no-list-style li {
+   font-weight: 100;
+   font-size: 0.9rem;
+}
+
+.no-list-style li a {
+   list-style: none;
+   color: white;
+   text-decoration: none;
+}
+
+.nav-menu li a {
+   font-size: 1.1rem;
+   transition: color 0.5s, border-bottom 3s;
+}
+
+.nav-menu li a:hover {
+   color: orange;
+   border-bottom: 1px solid black;
+}
+
+.vertical-list {
+   padding: 0px;
+   margin-top: 0vh;
+}
+
+.vertical-list li {
+   display: inline-block;
+   margin: 10px 8px 8px 0px;
+   box-shadow: 0px 0px 5px 8px rgba(0, 0, 0, 0.811);
+}
+
+.vertical-list li a {
+   font-size: 1.4rem;
+   color: white;
+   text-decoration: none;
+   transition: color 0.5s, border-bottom 2s;
+   padding: 10px;
+}
+
+.vertical-list li a:hover {
+   font-size: 25px;
+   color: lightslategray;
+   border-bottom: 1px solid black;
+}
+
+/* Name and Social Links */
+
+#name-container {
+   margin: 6vh 0;
+   text-align: center;
+}
+
+#my-name {
+   display: inline-block;
+   letter-spacing: 0.1rem;
+   color: white;
+   font-weight: 900;
+   font-size: 2.4rem;
+   margin: 0;
+   box-shadow: 0px 0px 5px 8px rgba(129, 164, 211, 0.3);
+}
+
+#social-links ul {
+   margin-left: 2rem;
+}
+
+#social-links ul li {
+   display: table-row;
+   height: 38px;
+   margin: 12px;
+   box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.811);
+}
+
+.social-icons li a {
+   padding: 20px 10px 0;
+   /*     transition: none; */
+}
+
+.social-icons li a:hover {
+   box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+.social-icons li a img {
+   font-size: 1rem;
+   width: 1.3rem;
+   padding: 6px;
+   font-size: 1rem;
+   margin: 0.2rem 0.2rem;
+}
+
+
+
+/* Horizontal Lists */
+
+.horizontal-list {
+   list-style: none;
+   padding: 0px;
+   margin-top: 0vh;
+}
+
+.horizontal-list li {
+   display: inline-block;
+   margin: 10px 8px 8px 0px;
+   box-shadow: 0px 0px 5px 8px rgba(0, 0, 0, 0.811);
+}
+
+.horizontal-list li a {
+   font-size: 1.4rem;
+   font-family: "Times New Roman", Times, serif;
+   color: white;
+   text-decoration: none;
+   transition: color 0.5s, border-bottom 2s;
+}
+
+.horizontal-list li a:hover {
+   font-size: 25px;
+   color: lightslategray;
+   border-bottom: 1px solid black;
+}
+
+
+
+/* About Section */
+
+#about {
+   height: auto;
+   width: 100%;
+   position: relative;
+}
+
+#my-image {
+   height: 12rem;
+   width: 12rem;
+   margin: auto;
+   margin-top: -14vh;
+}
+
+#my-image img {
+   height: 100%;
+   width: 100%;
+   border-radius: 50%;
+   border: 4px solid white;
+   box-shadow: 1px 1px 6px 3px lightgray;
+}
+
+#about p {
+   padding: 10px;
+   width: 70%;
+   height: 100%;
+   margin: auto;
+   line-height: 1.2rem;
+   color: grey;
+   text-align: justify;
+}
+
+
+
+/* skills section */
+
+section {
+   width: 100%;
+   height: 75vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+section:nth-child(2n + 1) {
+   background-color: white;
+   height: auto;
+}
+
+section:nth-child(2n) {
+   background-color: #9e9b9b29;
+   height: auto;
+}
+
+.section-heading {
+   width: auto;
+   padding: 5px 10px 10px;
+   font-weight: 600;
+}
+
+.section-heading span {
+   font-size: 40px;
+   color: #2857a4;
+   display: inline-block;
+   padding-top: 5px;
+   margin-right: 0.5rem;
+}
+
+.section-heading span img {
+   width: 3rem;
+   height: 2.5rem;
+   padding: 4px;
+   font-size: 1rem;
+   margin: 0.2rem 0.2rem;
+   margin-bottom: -5px;
+}
+
+.skills-display {
+   display: flex;
+   width: 70%;
+   padding: 10px;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+.skill-progress {
+   width: 9rem;
+   height: 1.7rem;
+   background-color: lightgrey;
+   border-radius: 0.8rem;
+   box-shadow: 10px 3px 15px -3px black;
+   overflow: hidden;
+   margin-right: 2.5rem;
+   margin-bottom: 2rem;
+}
+
+.skill-name span {
+   color: white;
+   font-size: 1.1rem;
+   margin-left: 0.5rem;
+   /* margin-top: 1px; */
+}
+
+
+
+/* Portfolio */
+
+.portfolio-display {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0 50px;
+   justify-content: space-evenly;
+}
+
+.portfolio-img {
+   position: relative;
+   max-width: 300px;
+   margin: 0 30px 20px;
+   overflow: hidden;
+   opacity: 0.9;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.portfolio-img img {
+   width: 100%;
+   height: 100%;
+}
+
+.portfolio-details p a {
+   transition: all 0.3s ease-in-out;
+   position: absolute;
+   color: transparent;
+   text-align: center;
+   text-decoration: none;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   padding: 10px;
+}
+
+.portfolio-img:hover {
+   box-shadow: 0 0 15px #4a90b1;
+   opacity: 0.8;
+}
+
+.portfolio-img:hover .portfolio-details p a {
+   color: midnightblue;
+   background-color: #80808078;
+   font-size: 1.9rem;
+   font-weight: 300;
+}
+
+/* Contact Section */
+
+#contact {
+   color: white;
+   background-image: linear-gradient(45deg, #2857a4, #403066);
+   padding-bottom: 1.5rem;
+}
+
+.contact-display {
+   /*     flex-wrap: wrap; */
+   padding: 0 50px;
+   margin-bottom: 20px;
+   justify-content: space-evenly;
+   display: flex;
+}
+
+.contact-display h2 {
+   /*   margin: 0 0 30px; */
+   padding: 0;
+   color: #fff;
+   text-align: center;
+}
+
+.contact-display .user-box {
+   position: relative;
+}
+
+.contact-display .user-box input,
+textarea {
+   width: 100%;
+   padding: 10px 0;
+   font-size: 16px;
+   color: #fff;
+   margin-bottom: 30px;
+   border: none;
+   border-bottom: 1px solid #fff;
+   outline: none;
+   background: transparent;
+}
+
+/* on-hover/on-click effect for form inputs */
+
+/* .contact-display .user-box label{
+    position: absolute;
+    top:0;
+    left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.contact-display .user-box input:focus ~ label,
+.contact-display .user-box input:valid ~ label{
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+    color: #03e9f4;
+} */
+
+.contact-form button[type="submit"] {
+   position: relative;
+   padding: 0.9375em 1.875em;
+   box-shadow: 0 0 0 0.0625em #fff inset;
+   border: 0;
+   border-radius: 0.25em;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+   background-color: inherit;
+   color: #fff;
+   cursor: pointer;
+}
+
+.contact-form button:hover {
+   background: white;
+   color: #13386fe0;
+}
+
+.address-contacts {
+   width: auto;
+   padding: 5px 10px 0px;
+   font-weight: 600;
+}
+
+.address-contacts span {
+   font-size: 14px;
+   display: inline-block;
+   margin-right: 0.5rem;
+   padding-left: 0;
+}
+
+.address-contacts span img {
+   width: 30px;
+   height: auto;
+   margin: -9px 5px;
+}
+
+.contact-form {
+   width: 50%;
+   margin: 0 20px;
+}
+
+.contact-address {
+   width: 50%;
+   margin: 0 20px;
+}
+
+/* Work Experience */
+
+.timeline {
+   position: relative;
+   width: 75%;
+   border: 2px solid black;
+}
+
+.timeline-box {
+   padding: 5px;
+   width: 40%;
+   min-height: 150px;
+   position: relative;
+   left: 5%;
+   text-align: right;
+   border: 1px solid black;
+   box-sizing: border-box;
+}
+
+.timeline-box::after {
+   content: "";
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   background-color: lightgrey;
+   top: 25%;
+   border-radius: 50%;
+   z-index: 1;
+}
+
+.timeline-box:nth-child(2n) {
+   left: 55%;
+}
+
+.timeline-box:nth-child(2n + 1)::after {
+   /* right: -11.8%; */
+   left: 110.5%;
+}
+
+.timeline-box:nth-child(2n)::after {
+   /* left: -9.9%; */
+   right: 110%;
+}
+
+#timeline-divider {
+   position: absolute;
+   width: 0;
+   top: 8%;
+   left: 50%;
+   border: 1px dashed #0096fa6b;
+   height: 75%;
+   color: #433e3f;
+}
+
+
+#timeline-divider .timeline-traveller {
+   position: sticky;
+   top: 135px;
+   z-index: 2;
+}
+
+#timeline-divider i {
+   transform: rotate(90deg);
+   font-size: 240%;
+   margin-top: -35px;
+   display: block;
+   color: #2857a4;
+}
+
+
+
+
+/* Common CSS */
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+   outline: none;
+}
+
+.text-right {
+   text-align: right;
+}
+
+.text-center {
+   text-align: center;
+}
+
+.mb75px {
+   margin-bottom: 75px;
+}
+
+.mb2rem {
+   margin-bottom: 4rem;
+}
+
+
+/* progress bar color */
+
+.mb-blue {
+   background-color: #2857a4;
+}
+
+.mb-orange {
+   background-color: #ec4d1c;
+}
+
+.mb-teal {
+   background-color: #0b8176;
+}
+
+.mb-light-purple {
+   background-color: #93738c;
+}
+
+
+/* Progress bar percentage */
+
+.fifty {
+   width: 50%;
+   height: inherit;
+   border-radius: inherit;
+   box-shadow: 2px 0px 7px grey;
+}
+
+.sixty {
+   width: 60%;
+   height: inherit;
+   border-radius: inherit;
+   box-shadow: 2px 0px 7px gray;
+}
+
+.ninty {
+   width: 90%;
+   height: inherit;
+   border-radius: inherit;
+   box-shadow: 2px 0px 7px grey;
+}
+
+.eighty {
+   width: 80%;
+   height: inherit;
+   border-radius: inherit;
+   box-shadow: 2px 0px 7px grey;
+}
+
+/* Responsive Code for screen variations */
+
+
+@media only screen and (max-width: 900px) {
+   #body-header nav {
+      font-size: 30px;
+      padding-left: 50px;
+   }
+
+   .horizontal-list li a {
+      font-size: 1.3rem;
+   }
+}
+
+@media only screen and (max-width: 850px) {
+
+   /*   This below code is to make social links in header as side-bar  */
+   #body-header #social-links {
+      display: flex;
+      flex-direction: column;
+      margin-left: -7vh;
+   }
+
+   #body-header #social-links ul li {
+      background-color: black;
+      opacity: 0.8;
+   }
+}
+
+
+@media only screen and (max-width: 720px) {
+   .bars {
+      display: block;
+   }
+
+   .nav-menu {
+      display: none;
+   }
+
+   #name-container {
+      margin: -26px 0 5vh;
+   }
+
+   #timeline-divider {
+      left: 5%;
+   }
+
+   .timeline-box {
+      left: 12% !important;
+      width: 80%;
+   }
+
+   /* .timeline-box:nth-child(2n){
+        left: 12%;
+    } */
+
+   .timeline-box:nth-child(2n + 1)::after {
+      left: -11.5%;
+   }
+
+   .timeline-box:nth-child(2n)::after {
+      right: 106.5%;
+   }
+
+   .contact-display {
+      flex-wrap: wrap;
+   }
+
+   .contact-form {
+      width: 80%;
+      margin: 5%;
+   }
+
+   .contact-address {
+      width: 80%;
+      margin: 5%;
+   }
+
+}
+
+@media only screen and (max-width: 530px) {
+   #name-container {
+      margin: 0px 0 5vh;
+   }
+
+}
+
+@media only screen and (max-width: 430px) {
+   #my-name {
+      font-size: 1.9rem;
+   }
+
+}
